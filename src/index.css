@@ -21,6 +21,13 @@
   height: 194px;
 }
 
+.customShirts {
+  background-image: url("./assets/custom-shirts.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media (max-width: 820px) {
   .hero-bg {
     background: none;
