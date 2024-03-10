@@ -5,7 +5,7 @@ export default {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
-        heading: ["Poppins", "sans-serif"],
+        heading: ["Encode Sans", "sans-serif"],
       },
       colors: {
         textPrimary: "#545454",

@@ -6,6 +6,8 @@ import { IoMdMenu, IoMdClose } from "react-icons/io";
 import { motion } from "framer-motion"; // Import motion
 
 import logo from "../assets/tshirts-logo.svg";
+import { Link } from "react-router-dom";
+import { LOGIN } from "../constants/routesPath";
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -30,7 +32,9 @@ const Navbar = () => {
         </div>
 
         <div className="flex gap-3 text-2xl">
-          <IoPersonOutline className="cursor-pointer" />
+          <Link to={LOGIN}>
+            <IoPersonOutline className="cursor-pointer" />
+          </Link>
           <HiOutlineShoppingBag className="cursor-pointer" />
           <IoMdMenu
             className="max-xl:block hidden cursor-pointer"
