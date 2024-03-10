@@ -3,6 +3,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 import logo from "../assets/tshirts-footer-logo.svg";
+import FooterIcons from "./FooterIcons";
 
 const Footer = () => {
   const year = new Date().getFullYear();
@@ -97,11 +98,14 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="w-[90%] pb-8 mx-auto">
-        <div className="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+      <div className="w-[90%] mx-auto pb-8 flex justify-between max-md:flex-col max-md:items-center max-md:gap-4">
+        <div className="flex flex-wrap flex-col sm:flex-row ">
           <p className="text-center text-[#A7A7A7] sm:text-left">
             © {year} Tshirts.com. All rights reserved.
           </p>
+        </div>
+        <div className="flex gap-2 ">
+          <FooterIcons />
         </div>
       </div>
     </footer>

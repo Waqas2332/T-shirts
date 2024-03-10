@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       <Navbar />
-      <main className="pt-[106px]">
+      <main className="pt-[106px] mb-20">
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path={LOGIN} element={<Login />} />
