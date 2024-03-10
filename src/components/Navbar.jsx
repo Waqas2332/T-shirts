@@ -23,7 +23,7 @@ const Navbar = () => {
             <p>Apparel</p>
             <p>Gifts</p>
           </div>
-          <div className="border h-10 w-[300px] rounded-md ms-auto flex ps-1 items-center border-[#e9e8e8]">
+          <div className="border h-10 w-[300px] rounded-md ms-auto max-md:hidden flex ps-1 items-center border-[#e9e8e8]">
             <CiSearch size={24} color="#717272" />
             <input type="text" className="outline-none ms-3" />
           </div>
@@ -52,14 +52,18 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
           />
           <motion.div
-            className="fixed flex justify-between top-0 pt-10 left-0 h-full w-[70%] bg-white z-20"
+            className="fixed flex justify-between top-0 pt-10 left-0 h-full w-[80%] bg-white z-20"
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}
             transition={{ type: "spring", stiffness: 500, damping: 30 }}
           >
             <div>
-              <div className="ms-6">
+              <div className=" ms-4 space-y-6">
                 <img src={logo} alt="Tshirts" width={150} />
+                <div className="border h-10 rounded-md ms-auto  md:hidden flex ps-1 items-center border-[#e9e8e8]">
+                  <CiSearch size={24} color="#717272" />
+                  <input type="text" className="outline-none ms-3" />
+                </div>
                 <div className="mt-8 space-y-8 font-semibold">
                   <p>Custom Apparel</p>
                   <p>Collections</p>
