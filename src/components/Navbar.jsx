@@ -15,9 +15,19 @@ import {
   CUSTOM_APPAREL_LIST,
   GIFTS_LIST,
 } from "../constants/DropDownLists";
+import CartDrawer from "./CartDrawer";
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [cartOpen, setCartOpen] = useState(true);
+
+  const handleOpenCart = () => {
+    setCartOpen(true);
+  };
+
+  const handleCloseCart = () => {
+    setCartOpen(false);
+  };
 
   return (
     <header className="pt-6 shadow-md fixed top-0 w-full bg-white z-10 pb-6">
@@ -42,7 +52,10 @@ const Navbar = () => {
           <Link to={LOGIN}>
             <IoPersonOutline className="cursor-pointer" />
           </Link>
-          <HiOutlineShoppingBag className="cursor-pointer" />
+          <HiOutlineShoppingBag
+            className="cursor-pointer"
+            onClick={handleOpenCart}
+          />
           <IoMdMenu
             className="max-xl:block hidden cursor-pointer"
             onClick={() => {
@@ -91,6 +104,8 @@ const Navbar = () => {
           </motion.div>
         </>
       )}
+
+      {cartOpen && <CartDrawer isOpen={cartOpen} onClose={handleCloseCart} />}
     </header>
   );
 };
