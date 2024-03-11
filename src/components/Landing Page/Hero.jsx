@@ -11,7 +11,7 @@ const Hero = () => {
           Discover t-shirts for lots occasions or design your own for a truly
           personalized touch. Check out our St. Patrick&apos;s Day collection.
         </p>
-        <Button>Shop Now</Button>
+        <Button className="text-white">Shop Now</Button>
       </div>
     </section>
   );

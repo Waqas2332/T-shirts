@@ -10,7 +10,7 @@ const CustomShirts = () => {
         Express yourself with your own Custom T-shirt Design. We make it easy to
         create and order with our Custom Design Tool.
       </p>
-      <Button className="text-black bg-white hover:text-black max-md:w-[90%]">
+      <Button className=" bg-white text-black  hover:text-black max-md:w-[90%]">
         Shop Now
       </Button>
     </div>
