@@ -68,10 +68,10 @@ const Navbar = () => {
             animate={{ x: 0 }}
             transition={{ type: "spring", stiffness: 500, damping: 30 }}
           >
-            <div>
-              <div className=" ms-4 space-y-6">
+            <div className="w-full">
+              <div className=" ms-4 space-y-6 w-full">
                 <img src={logo} alt="Tshirts" width={150} />
-                <div className="border h-10 rounded-md ms-auto  md:hidden flex ps-1 items-center border-[#e9e8e8]">
+                <div className="border w-[90%] h-10 rounded-md  md:hidden flex ps-1 items-center border-[#e9e8e8]">
                   <CiSearch size={24} color="#717272" />
                   <input type="text" className="outline-none ms-3" />
                 </div>
